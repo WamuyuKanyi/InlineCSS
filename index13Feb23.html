@@ -1,3 +1,6 @@
+ <!-- NB: ALWAYS ADD A SEMICOLON BETWEEN DECLARATIONS, OTHERWISE YOU ARE GOING TO GET A SYNTAX ERROR -->
+ <!-- HTML IS FOR WHAT ELEMENTS WILL BE DISPLAYED WHILE CSS IS HOW ELEMENTS ARE DISPLAYED ie layout-->
+ <!-- Three ways of using css: the inline,internal, external -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +10,11 @@
  <title>CSS tutorial</title>
 </head>
 <body>
- <!-- NB: ALWAYS ADD A SEMICOLON BETWEEN DECLARATIONS, OTHERWISE YOU ARE GOING TO GET A SYNTAX ERROR -->
- <!-- HTML IS FOR WHAT ELEMENTS WILL BE DISSPLAYED WHILE CSS IS HOW ELEMENTS ARE DISPLAYED ie layout-->
- <!-- Three ways of using css: the inline,internal, external -->
  <!-- inline css -->
  <h1 style="color: blue; font-size: 3rem;">Hello world</h1>
 </body>
 </html>
+<!-- END -->
 
 <!--INTERNAL CSS  -->
 <!DOCTYPE html>
@@ -42,3 +43,24 @@
 </body>
 </html>
 <!--  Internal CSS lacks flexibility for multiple pages thus we can use external css-->
+<!-- END -->
+
+<!-- EXTERNAL CSS -->
+<!-- for external css we create another file that will be used for styling for example style.css-->
+h1{
+ color: blueviolet;
+}
+h2{
+color:red;
+}
+<!-- then create a link in the index page or about page -->
+<link rel="stylesheet" href="./style13Feb23.css">
+<!-- all heading ones will be blueviolet and all heading twos will be red -->
+<!--  ./style13Feb23.css, being the file name-->
+<!--NB:its easier to put your style files in ONE FOLDER FOR EASIER ACCESS  -->
+<!-- END -->
+
+<!-- NB:
+ INTERANL CSS WILL OVERRIDE EXTERNAL CSS 
+INLINE IS THE MOST STRONGEST ONE AS IT WILL OVERRIDE THE INTERNAL AND EXTERNAL CSS-->
+<!-- FOLLOWED BY INTERNAL THEN EXTERNAL -->
